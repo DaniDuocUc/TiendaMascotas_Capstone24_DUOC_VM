@@ -1,0 +1,60 @@
+{% extends 'admin/change_form.html' %}
+{% load static %}
+{% block extrahead %}
+{{ block.super }}
+<link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet-geosearch@3.0.0/dist/geosearch.css"
+/>
+
+<style>
+    .leaflet-touch .leaflet-control-geosearch button.reset {
+        line-height: 30px;
+    }
+
+    .leaflet-control-geosearch button.reset {
+        color: #000;
+        font-weight: 700;
+        position: absolute;
+        line-height: 26px;
+        padding: 0 8px;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        border: none;
+        text-decoration: none;
+        background-color: #fff;
+        border-radius: 0 4px 4px 0;
+    }
+
+    .leaflet-control-geosearch button.reset:hover {
+        background: #f5f5f5;
+    }
+</style>
+
+{% endblock %}
+
+
+{% block footer %}
+{{ block.super }}
+<script src="https://unpkg.com/leaflet-geosearch@latest/dist/bundle.min.js"></script>
+<script>
+    window.addEventListener("map:init", function (event) {
+        const map = event.detail.map; // Get reference to map
+        const provider = new GeoSearch.OpenStreetMapProvider();
+        const searchControl = new GeoSearch.GeoSearchControl({
+            placeholder: 'Buscar dirección',
+            noResultLabel: 'No se encontraron resultados',
+            provider: provider,
+            style: 'bar',
+            autoComplete: true,
+            autoCompleteDelay: 250,
+            showMarker: true,
+            keepResult: true
+        });
+        map.addControl(searchControl);
+        // how to search LineString in map
+
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,28 @@
+.c-table {
+    @apply w-full cursor-pointer;
+    &--bg-row-hover {
+        .mat-row:hover {
+            @apply bg-gray-100;
+        }
+    }
+    &--mat-cell-font-12 {
+        .mat-cell {
+            font-size: 12px;
+        }
+    }
+
+    &--border-hidden {
+        .mat-row {
+            border-style: hidden;
+        }
+    }
+
+    &--bg-row-even {
+        .mat-row:nth-child(even) {
+            @apply bg-gray-100;
+            .dark & {
+                @apply bg-gray-700;
+            }
+        }
+    }
+}

@@ -1,0 +1,1300 @@
+{
+    "navigation": {
+        "Selector escenarios": "Scenario Selector",
+        "Optimizar": "Optimize",
+        "Reportes": "Reports",
+        "Mantenimiento": "Maintenance",
+        "Panel de control": "Control Panel"
+    },
+    "header": {
+        "user": {
+            "logout": "Logout"
+        },
+        "language": {
+            "es": "Spanish",
+            "en": "English",
+            "pr": "Portuguese"
+        },
+        "theme": {
+            "light": "Switch to light mode",
+            "dark": "Switch to dark mode"
+        },
+        "fullscreen": "Toggle Full Screen",
+        "breadcrumb": {
+            "inicio": "Home",
+            "panel-de-control": "Control Panel",
+            "optimizar": "Optimize",
+            "selector-escenarios": "Scenario Selector",
+            "mantenimiento": "Maintenance",
+            "escenario": "Scenario",
+            "exclusión": "Exclusion",
+            "trigger": "Trigger",
+            "definir-escenario": "Define Scenario",
+            "revisar-costos": "Review Costs",
+            "revisar-reglas": "Review Rules",
+            "resumen": "Summary",
+            "optimizacion": "Optimization",
+            "resultados": "Results",
+            "aprobar-precios": "Approve Prices",
+            "reportes": "Reports"
+        }
+    },
+    "login": {
+        "title": "Hello, welcome",
+        "subtitle": "You can log in with your corporate account",
+        "forms": {
+            "inputs": {
+                "username": {
+                    "label": "Email / User",
+                    "placeholder": "Email / User",
+                    "errors": {
+                        "required": "Username is required"
+                    }
+                },
+                "password": {
+                    "label": "Password",
+                    "placeholder": "Password",
+                    "errors": {
+                        "required": "Password is required"
+                    }
+                }
+            },
+            "buttons": {
+                "into": {
+                    "label": "Log in"
+                }
+            }
+        },
+        "alert": {
+            "error": {
+                "into": "Incorrect email or password"
+            }
+        },
+        "version": {
+            "label": "Version",
+            "value": "1.0.0"
+        }
+    },
+    "logout": {
+        "title": "Logging out",
+        "subtitle": {
+            "part-a": "Redirecting in",
+            "part-b": "second",
+            "part-c": "seconds"
+        },
+        "label": {
+            "redirect": "Redirected"
+        },
+        "buttons": {
+            "logout": {
+                "part-a": "Go to",
+                "part-b": "Log In"
+            }
+        }
+    },
+    "stepper": {
+        "Escenario": "Scenario",
+        "Revisar costos": "Review costs",
+        "Revisar reglas": "Review rules",
+        "Resumen": "Summary",
+        "Optimizar": "Optimize",
+        "Resultados": "Results",
+        "Aprobar Precios": "Approve Prices",
+        "buttons": {
+            "show": "Show",
+            "hide": "Hide"
+        }
+    },
+    "generic": {
+        "excel": {
+            "errors": {
+                "read": {
+                    "title": "Error reading file",
+                    "message": "The file could not be read correctly"
+                },
+                "format": {
+                    "title": "Incorrect file format",
+                    "message": "The file does not have the correct format"
+                },
+                "download": {
+                    "title": "Error downloading file",
+                    "message": "The file could not be downloaded correctly"
+                }
+            },
+            "success": {
+                "read": {
+                    "title": "File read successfully",
+                    "message": "The file was read successfully"
+                },
+                "download": {
+                    "title": "File downloaded successfully"
+                }
+            }
+        },
+        "buttons": {
+            "continue": "Continue",
+            "cancel": "Cancel",
+            "optimize": "Optimize",
+            "search": "Search"
+        },
+        "forms": {
+            "option": {
+                "label": "Select an option"
+            },
+            "chain": {
+                "label": "Chain",
+                "placeholder": "Select a chain",
+                "all": "All chains",
+                "errors": {
+                    "required": "You must select a chain"
+                }
+            },
+            "user": {
+                "label": "User",
+                "placeholder": "Select a user",
+                "all": "All users",
+                "errors": {
+                    "required": "You must select a user"
+                }
+            },
+            "status": {
+                "label": "Status",
+                "placeholder": "Select a status",
+                "all": "All statuses",
+                "errors": {
+                    "required": "You must select a status"
+                }
+            },
+            "state": {
+                "label": "State (UF)",
+                "placeholder": "Select a state",
+                "all": "All states",
+                "errors": {
+                    "required": "You must select a state"
+                }
+            },
+            "format": {
+                "label": "Format",
+                "placeholder": "Select a format",
+                "all": "All formats",
+                "errors": {
+                    "required": "You must select a format"
+                }
+            },
+            "basket": {
+                "label": "Basket"
+            },
+            "no-result": {
+                "label": "No results"
+            },
+            "no-data": {
+                "label": "No data"
+            },
+            "search": {
+                "label": "Search",
+                "placeholder": "Search by any field"
+            }
+        },
+        "table": {
+            "columns": {
+                "id-store": "Store ID",
+                "store": "Store",
+                "chain": "Chain",
+                "format": "Format",
+                "basket": "Basket",
+                "brand": "Brand",
+                "category": "Category",
+                "sub-category": "Subcategory",
+                "material": "Material",
+                "management": "Management",
+                "action": "Action",
+                "price": "Price ($)",
+                "scenario-id": "ID",
+                "scenario-code": "Scenario Code",
+                "scenario-name": "Scenario Name",
+                "creation-date": "Creation Date",
+                "created-by": "Created by",
+                "status": "Status",
+                "options": "Options"
+            },
+            "body": {
+                "no-data": "No data available"
+            }
+        },
+        "paginator": {
+            "items-per-page": "Items per page",
+            "next-page": "Next page",
+            "previous-page": "Previous page",
+            "first-page": "First page",
+            "last-page": "Last page"
+        },
+        "label": {
+            "product-group": "Select the product groups to filter"
+        },
+        "anomalies": {
+            "CDP": "Generic code with different price",
+            "PMC": "Regular price < current cost imposed",
+            "CBH": "Current costs decreasing compared to their history",
+            "CCD": "Generic code with different baskets",
+            "IDX": "Index >= IDX rule",
+            "PNN": "Regular price is null or <= 0",
+            "VCC": "Cost variability",
+            "CCN": "Current costs are zero or negative",
+            "CNU": "Null costs"
+        }
+    },
+    "optimize": {
+        "errors": {
+            "dialog": {
+                "title": "Error optimizing",
+                "message": "An error occurred while optimizing the scenario, please try again later.",
+                "buttons": {
+                    "go-to-home": "Go to Home"
+                }
+            }
+        }
+    },
+    "scenario-selector": {
+        "title": "Scenario Manager",
+        "kpis": {
+            "pending": {
+                "title": "Pending optimization",
+                "tooltip": "Scenarios pending optimization"
+            },
+            "optimizing": {
+                "title": "Optimized last month",
+                "tooltip": "Scenarios optimized last month"
+            }
+        },
+        "filters": {
+            "title": "Customize View",
+            "subtitle": "Selected Filters: ",
+            "create": "Create scenario",
+            "input": "Search by name, ID",
+            "selects": {
+                "simulation": {
+                    "placeholder": "Simulation",
+                    "filter": "Search for a Simulation"
+                }
+            },
+            "buttons": {
+                "advanced": "Advanced Search"
+            },
+            "selected": {
+                "chain": "Chain",
+                "user": "User",
+                "status": "Status",
+                "simulation": "Simulation",
+                "sales": "Sales",
+                "contribution": "Contribution",
+                "delete-filter": "Delete filter",
+                "search": "Search",
+                "optimization_goal": "Optimization goal",
+                "start_date": "Date range"
+            }
+        },
+        "dialog": {
+            "title": "Advanced Search",
+            "subtitle": "Optimization goal",
+            "buttons": {
+                "cancel": "Cancel",
+                "save": "Save",
+                "search": "Search"
+            },
+            "range-date": {
+                "label": "Date Range",
+                "start": {
+                    "label": "Start Date",
+                    "placeholder": "Start Date"
+                },
+                "end": {
+                    "label": "End Date",
+                    "placeholder": "End Date"
+                }
+            }
+        },
+        "tabs": {
+            "manual": "Manual",
+            "automatic": "Automatic"
+        },
+        "table": {
+            "automatic": {
+                "header": {
+                    "simulation": "Simulation Type",
+                    "total-combinations": "Total SKU Combinations"
+                }
+            }
+        },
+        "badges": {
+            "Optimizando": "Optimizing",
+            "Optimizado": "Optimized",
+            "Borrador": "Draft",
+            "Aprobado": "Approved"
+        },
+        "mat-menu": {
+            "edit": "Edit",
+            "delete": "Delete",
+            "view": "View"
+        },
+        "snack-bar": {
+            "load": {
+                "success": "Scenarios loaded successfully.",
+                "error": "Error loading scenarios."
+            },
+            "edit": {
+                "success": "Scenario edited successfully.",
+                "error": "Error editing scenario."
+            },
+            "delete": {
+                "success": "Scenario deleted successfully.",
+                "error": "Error deleting scenario."
+            }
+        },
+        "dialog-options": {
+            "delete": {
+                "title": "Delete Scenario",
+                "message": "Are you sure you want to delete the scenario?",
+                "buttons": {
+                    "cancel": "No, cancel",
+                    "confirm": "Yes, delete"
+                }
+            }
+        }
+    },
+    "step-1": {
+        "information": {
+            "title": "Complete the information to start optimization",
+            "subtitle": "Optimization goal",
+            "checkbox": {
+                "label": "What is your optimization goal?",
+                "options": {
+                    "sales": "Sales",
+                    "contribution": "Contribution"
+                },
+                "errors": {
+                    "required": "You must select a goal"
+                }
+            },
+            "inputs": {
+                "name": {
+                    "label": "Define the scenario name",
+                    "placeholder": "Scenario name",
+                    "errors": {
+                        "required": "You must enter a name",
+                        "maxlength": "The name cannot be more than 30 characters"
+                    }
+                },
+                "date": {
+                    "label": "Start date of optimized price validity",
+                    "placeholder": "Start date",
+                    "errors": {
+                        "required": "You must enter a date",
+                        "min": "The date must be greater than the current date"
+                    }
+                }
+            }
+        },
+        "product-selected": {
+            "title": "Product selection",
+            "tabs": {
+                "manual": {
+                    "title": "Manual selection",
+                    "subtitle": "Which category or group of products are you going to optimize?",
+                    "forms": {
+                        "level": {
+                            "label": "Level",
+                            "placeholder": "Select a level",
+                            "errors": {
+                                "required": "You must select a level"
+                            }
+                        },
+                        "element": {
+                            "label": "Element",
+                            "placeholder": "Select elements",
+                            "search": {
+                                "label": "Search for an element",
+                                "all": "Select all"
+                            },
+                            "errors": {
+                                "required": "You must select an element"
+                            }
+                        },
+                        "buttons": {
+                            "add": {
+                                "label": "Add"
+                            }
+                        }
+                    },
+                    "tree": {
+                        "title": "Added product groups",
+                        "buttons": {
+                            "delete": {
+                                "label": "Delete group"
+                            },
+                            "filter": {
+                                "label": "Filter group"
+                            },
+                            "tooltip": {
+                                "count": "Total elements: "
+                            }
+                        },
+                        "dialog": {
+                            "title": "Filter group",
+                            "subtitle": "Select a level to filter the products you want",
+                            "buttons": {
+                                "cancel": "Cancel",
+                                "add": "Add",
+                                "save": "Save and exit"
+                            },
+                            "status": {
+                                "create": "Successfully added",
+                                "update": "Successfully updated"
+                            }
+                        }
+                    },
+                    "alerts": {
+                        "empty": "You haven't selected any product groups yet"
+                    }
+                },
+                "file": {
+                    "title": "Upload a file",
+                    "subtitle": "Download the spreadsheet and upload the file with your product selection",
+                    "buttons": {
+                        "download": {
+                            "label": "Download spreadsheet",
+                            "cancel": "Cancel"
+                        }
+                    },
+                    "file-drop": {
+                        "label": "Drag and drop the file here OR",
+                        "buttons": {
+                            "label": "Select a file"
+                        },
+                        "alerts": {
+                            "errors": {
+                                "label": "Upload the file with your product selection"
+                            },
+                            "success": {
+                                "label-singular": {
+                                    "part-1": "Uploaded ",
+                                    "part-2": " SKU"
+                                },
+                                "label-plural": {
+                                    "part-1": "Uploaded ",
+                                    "part-2": " SKUs"
+                                }
+                            }
+                        }
+                    }
+                },
+                "exclude-file": {
+                    "title": "Exclude products",
+                    "subtitle": "Download the spreadsheet and upload the file with your product exclusion",
+                    "buttons": {
+                        "download": {
+                            "label": "Download spreadsheet",
+                            "cancel": "Cancel"
+                        }
+                    },
+                    "file-drop": {
+                        "label": "Drag and drop the file here OR",
+                        "buttons": {
+                            "label": "Select a file"
+                        },
+                        "alerts": {
+                            "errors": {
+                                "label": "Upload the file with your product exclusion"
+                            },
+                            "success": {
+                                "label-singular": {
+                                    "part-1": "Uploaded ",
+                                    "part-2": " SKU"
+                                },
+                                "label-plural": {
+                                    "part-1": "Uploaded ",
+                                    "part-2": " SKUs"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "basket-selected": {
+            "title": "Which basket are you going to optimize?",
+            "errors": {
+                "required": "You must select at least one basket"
+            }
+        },
+        "chain-selected": {
+            "title": "Select the stores",
+            "forms": {
+                "format": {
+                    "label": "Format",
+                    "placeholder": "Formats",
+                    "search": {
+                        "label": "Search for a format",
+                        "all": "All formats",
+                        "no-data": "No matches"
+                    },
+                    "errors": {
+                        "required": "You must select a format"
+                    }
+                },
+                "store": {
+                    "label": "Store",
+                    "placeholder": "Stores",
+                    "search": {
+                        "label": "Search for a store",
+                        "all": "All stores",
+                        "no-data": "No matches"
+                    },
+                    "errors": {
+                        "required": "You must select a store"
+                    }
+                },
+                "errors": {
+                    "required": "You must select at least one format and one store"
+                }
+            }
+        },
+        "buttons": {
+            "update": "Update",
+            "next": "Continue"
+        },
+        "snack-bar": {
+            "post": {
+                "scenario": "Error creating the scenario."
+            },
+            "update": {
+                "scenario": "Error updating the scenario."
+            }
+        }
+    },
+    "step-2": {
+        "title": "Review costs",
+        "kpis": {
+            "cost": {
+                "title-1": "Costs outside parameters",
+                "title-2": "Last cost update",
+                "title-3": "Combinations without assigned costs",
+                "actions": {
+                    "tooltip": {
+                        "title-1": {
+                            "part-a": "Show costs outside parameters",
+                            "part-b": "Hide costs outside parameters"
+                        },
+                        "title-3": {
+                            "part-a": "Show combinations without assigned costs",
+                            "part-b": "Hide combinations without assigned costs"
+                        }
+                    }
+                }
+            },
+            "price": {
+                "title-1": "Prices outside parameters",
+                "title-2": "Last price update",
+                "title-3": "Generic code with different price",
+                "actions": {
+                    "tooltip": {
+                        "title-1": {
+                            "part-a": "Show prices outside parameters",
+                            "part-b": "Hide prices outside parameters"
+                        },
+                        "title-3": {
+                            "part-a": "Show generic code",
+                            "part-b": "Hide generic code"
+                        }
+                    }
+                }
+            }
+        },
+        "info": {
+            "title": "The costs of your product selection",
+            "date": {
+                "part-a": "have been updated on",
+                "part-b": "at"
+            },
+            "question": "Do you want to review and edit these costs?"
+        },
+        "buttons": {
+            "no-continue": "No, continue without reviewing",
+            "yes-revise": "Yes, review and edit costs"
+        },
+        "costs": {
+            "title": {
+                "part-a": "Review and edit costs",
+                "part-b": "of the combinations to optimize",
+                "part-c": "of ",
+                "part-d": " combination to optimize",
+                "part-e": "of the ",
+                "part-f": " combinations to optimize"
+            },
+            "filters": {
+                "category": {
+                    "label": "Filter by Category",
+                    "filter": {
+                        "placeholder": "Search for a category",
+                        "no-results": "No results"
+                    }
+                },
+                "sub-category": {
+                    "label": "Filter by Subcategory",
+                    "filter": {
+                        "placeholder": "Search for a subcategory",
+                        "no-results": "No results"
+                    }
+                }
+            },
+            "download": {
+                "title": {
+                    "part-a": "If you want to make a mass edition of costs,",
+                    "part-b": "then download, edit, and then upload the excel file"
+                },
+                "buttons": {
+                    "download": "Download file",
+                    "upload": "Upload modified file"
+                }
+            }
+        },
+        "prices": {
+            "title": "Review the prices and generic codes to optimize",
+            "filters": {
+                "format": {
+                    "label": "Filter by Format",
+                    "filter": {
+                        "placeholder": "Search for a format",
+                        "no-results": "No results"
+                    }
+                },
+                "chain": {
+                    "label": "Filter by Chain",
+                    "filter": {
+                        "placeholder": "Search for a chain",
+                        "no-results": "No results"
+                    }
+                }
+            }
+        },
+        "dialog": {
+            "title": "Edit Current Cost",
+            "form": {
+                "current-cost": {
+                    "label": "Current Cost ($)",
+                    "placeholder": "Current Cost",
+                    "errors": {
+                        "required": "You must enter a cost",
+                        "min": "The cost must not be greater than 0"
+                    }
+                }
+            },
+            "buttons": {
+                "save": "Save",
+                "cancel": "Cancel"
+            }
+        },
+        "snack-bar": {
+            "kpi": {
+                "success": "KPIs loaded successfully.",
+                "error": "Error getting KPIs."
+            },
+            "cost": {
+                "errors": {
+                    "get": "Error getting costs.",
+                    "update": "Error updating costs."
+                },
+                "success": {
+                    "get": "Costs loaded successfully.",
+                    "update": "Costs updated successfully."
+                }
+            }
+        },
+        "generic": {
+            "personalized": "Customize view",
+            "forms": {
+                "columns": {
+                    "label": "Select Columns",
+                    "other": {
+                        "part-a": "other",
+                        "part-b": "others"
+                    }
+                },
+                "search": {
+                    "label": "Search",
+                    "placeholder": "Search by desc, generic code, SKU"
+                }
+            },
+            "table": {
+                "columns": {
+                    "category": "Category",
+                    "sub-category": "Subcategory",
+                    "brand": "Brand",
+                    "chain": "Chain",
+                    "store": "Store",
+                    "current-cost": "Current Cost ($)",
+                    "variable-cost": "Variable Cost ($)",
+                    "added-cost": "Added Cost ($)",
+                    "discount-applied": "Discount Applied (%)",
+                    "anomaly": "Anomaly",
+                    "family": "Family",
+                    "format": "Format",
+                    "generic-code": "Generic Code",
+                    "normal-price": "Normal Price ($)",
+                    "current-price": "Current Price ($)",
+                    "options": {
+                        "title": "Options",
+                        "buttons": {
+                            "mat-tooltip": "Edit"
+                        }
+                    }
+                },
+                "no-data": "No data available"
+            },
+            "buttons": {
+                "continue": "Continue"
+            },
+            "kpis": {
+                "label": {
+                    "part-a": "Show",
+                    "part-b": "Hide"
+                }
+            }
+        }
+    },
+    "step-3": {
+        "title": "Review and edit the rules that will apply in the optimization of the SKUs to optimize",
+        "general-rules": {
+            "title": "General Rules",
+            "buttons": {
+                "group": {
+                    "label": "Add a new group of rules"
+                }
+            }
+        },
+        "specific-rules": {
+            "title": "Specific Rules"
+        },
+        "dialog": {
+            "title": "Add a new group of rules",
+            "subtitle": "Select a product group and configure the parameters for this new group of rules, which will apply only for this optimization.",
+            "forms": {
+                "product-level": {
+                    "label": "Select the product level",
+                    "placeholder": "Select a level"
+                },
+                "value": {
+                    "label": "Value"
+                },
+                "sub-level": {
+                    "label": "Select the sublevel",
+                    "placeholder": "Select a sublevel"
+                },
+                "basket-value": {
+                    "label": "Basket value"
+                }
+            },
+            "table": {
+                "title": "Rules and values",
+                "columns": {
+                    "rule": "Rule",
+                    "value": "Value"
+                },
+                "tooltip": {
+                    "info": "For each value, there is an established range, a help window will be displayed when hovering over the inputs."
+                }
+            },
+            "errors": {
+                "chain-format": "Select 'Chain' or 'Format' empty",
+                "product-level": "Select 'Product Level' empty"
+            },
+            "buttons": {
+                "add-rule": "Create new rule"
+            }
+        },
+        "app-rules": {
+            "slide": {
+                "active": "Activate",
+                "deactivate": "Deactivate"
+            },
+            "tooltip": {
+                "open": "Open",
+                "close": "Close"
+            },
+            "status": {
+                "edited": "Edited",
+                "new": "New",
+                "field-empty": "Empty field"
+            },
+            "buttons": {
+                "apply": "Apply"
+            },
+            "errors": {
+                "field-empty": "Empty field",
+                "min": "Minimum is ",
+                "max": "Maximum is ",
+                "invalid": " - Invalid value"
+            }
+        },
+        "snack-bar": {
+            "errors": {
+                "get": {
+                    "default-rules": "Error getting default rules.",
+                    "rules": "Error getting rules."
+                },
+                "post": {
+                    "default-rules": "Error creating rules."
+                },
+                "update": {
+                    "rules": "Error updating rules."
+                }
+            },
+            "success": {
+                "get": {
+                    "default-rules": "Rules loaded successfully."
+                },
+                "post": {
+                    "default-rules": "Rule created successfully."
+                },
+                "update": {
+                    "rules": "Rules updated successfully."
+                }
+            }
+        },
+        "table": {
+            "% Incremento Máx": "% Max Increase",
+            "% Decremento Máx": "% Max Decrease",
+            "Incremento maximo": "Maximum Increase",
+            "Decremento maximo": "Maximum Decrease",
+            "Max dec ventas": "Max Sales Decrease",
+            "Index Máximo Externo": "Maximum External Index",
+            "Index Mínimo Externo": "Minimum External Index",
+            "Index minimo absoluto": "Absolute Minimum Index",
+            "Index maximo absoluto": "Absolute Maximum Index",
+            "Max dec contribucion": "Max Contribution Decrease",
+            "Index Máximo Interno": "Maximum Internal Index",
+            "Index Mínimo Interno": "Minimum Internal Index"
+        }
+    },
+    "step-4": {
+        "title": "These are the entered data for this optimization",
+        "subtitle": "Make sure everything is correctly configured to run the optimization",
+        "card": {
+            "title": "General Data",
+            "items": {
+                "objective": "Objective",
+                "name": "Scenario Name",
+                "date": "Start Date",
+                "total-combinations": "Total Combinations",
+                "sales": "Sales",
+                "contribution": "Contribution"
+            },
+            "tooltip": {
+                "download": {
+                    "run": "Downloading...",
+                    "normal": "Download File"
+                }
+            },
+            "buttons": {
+                "download": "Total Combinations",
+                "file": "Optimization Combinations"
+            }
+        },
+        "tabs": {
+            "product-store": {
+                "title": "Product and Stores",
+                "subtitle": "Scenario Creation Type:",
+                "no-data": "No products selected"
+            },
+            "cost-price": {
+                "title": "Costs and Prices",
+                "list": {
+                    "cost": {
+                        "title": "Costs",
+                        "cost-outside-parameter": "Costs outside parameters:",
+                        "is-edited": "Edited:"
+                    },
+                    "price": {
+                        "title": "Prices",
+                        "price-outside-parameter": "Prices outside parameters:",
+                        "family-inconsistent-prices": "Generic code with different price:"
+                    }
+                }
+            },
+            "group-rules": {
+                "title": "Group of rules to be applied"
+            },
+            "anomaly": {
+                "title": "Anomalies",
+                "list": {
+                    "title": "Anomalies List"
+                }
+            }
+        },
+        "generic": {
+            "buttons": {
+                "edit": "Edit"
+            },
+            "labels": {
+                "last-update": "Last Update",
+                "total-combinations": "Total Combinations"
+            }
+        },
+        "snack-bar": {
+            "errors": {
+                "get": {
+                    "general-data": "Error retrieving general data.",
+                    "data": "Error retrieving data.",
+                    "product": "Error loading products.",
+                    "rules": "Error retrieving rules."
+                },
+                "post": {
+                    "optimize": "Error running optimization."
+                }
+            },
+            "success": {
+                "get": {
+                    "general-data": "General data loaded successfully."
+                }
+            }
+        }
+    },
+    "step-5": {
+        "loading": {
+            "title": "Optimization results will be displayed shortly",
+            "subtitle": "Optimization may take a few minutes."
+        },
+        "normal": {
+            "title": "To optimize again, you must return to step 4 Summary"
+        },
+        "dialog": {
+            "title": "Error optimizing",
+            "message": "An error occurred while optimizing the scenario, please try again later.",
+            "buttons": {
+                "go-to-home": "Return to home"
+            }
+        }
+    },
+    "step-6": {
+        "title": "Ready, the optimization was executed successfully, check the results below",
+        "buttons": {
+            "last-file": {
+                "label-1": "Last Execution",
+                "label-2": "Optimized Prices"
+            },
+            "last-report": {
+                "label-1": "Last Execution",
+                "label-2": "Results Report"
+            },
+            "go-approve": "Go to Approve"
+        },
+        "table": {
+            "columns": {
+                "id-execution": "Execution ID",
+                "date-execution": "Execution Date",
+                "duration": "Duration (S)",
+                "option": "Options"
+            }
+        },
+        "tooltip": {
+            "view-report": "View Report"
+        },
+        "template": {
+            "error": "An issue occurred while loading the data, please try again."
+        },
+        "generic": {
+            "download": {
+                "run": "Downloading...",
+                "normal": "Download File"
+            }
+        },
+        "snack-bar": {
+            "errors": {
+                "get": {
+                    "result": "Error loading results."
+                }
+            },
+            "success": {
+                "get": {
+                    "result": "Results loaded successfully."
+                }
+            }
+        },
+        "graphics": {
+            "tab-01": {
+                "title": "General Results and Actions",
+                "cards": {
+                    "info-01": {
+                        "title": "Sales Variation"
+                    }
+                },
+                "actions": {
+                    "title": "Actions",
+                    "down": "Down",
+                    "up": "Up",
+                    "keep": "Maintain"
+                }
+            },
+            "tab-02": {
+                "title": "Category Actions",
+                "chart": {
+                    "title": "Actions Taken by Categories"
+                }
+            },
+            "tab-03": {
+                "title": "Category Results",
+                "chart": {
+                    "title": "Projected Results by Categories"
+                }
+            },
+            "tab-04": {
+                "title": "Category Units Variation",
+                "chart": {
+                    "title": "Units Variation by Categories"
+                }
+            },
+            "generic": {
+                "expected": "Expected",
+                "contribution": "Contribution Variation",
+                "sales": "Sales Variation",
+                "unit": "Units Variation",
+                "percentage": "Percentage"
+            }
+        }
+    },
+    "step-7": {
+        "id-execution": {
+            "label": "Execution ID",
+            "tooltip": "Selected Execution ID"
+        },
+        "kpis": {
+            "total-combination": {
+                "part-a": "Total",
+                "part-b": "Combinations"
+            },
+            "total-store": {
+                "part-a": "Total",
+                "part-b": "Stores"
+            },
+            "added-combinations": {
+                "part-a": "Combinations",
+                "part-b": "Added"
+            },
+            "pending-combinations": {
+                "part-a": "Combinations",
+                "part-b": "Pending"
+            },
+            "approved-combinations": {
+                "part-a": "Combinations",
+                "part-b": "Approved"
+            }
+        },
+        "forms": {
+            "buttons": {
+                "search": "Apply Filters",
+                "create": "Create Group",
+                "approve": "Approve",
+                "clean-filter": "Clear Filters",
+                "go-home": "Go back to Home"
+            },
+            "inputs": {
+                "limit-sku": {
+                    "placeholder": "Enter maximum number of SKUs",
+                    "tooltip": "Maximum SKUs per store"
+                }
+            },
+            "selects": {
+                "gerencia": {
+                    "placeholder": "Management",
+                    "search": "Search for management"
+                },
+                "categoria": {
+                    "placeholder": "Category",
+                    "search": "Search for category"
+                },
+                "sub_categoria": {
+                    "placeholder": "Subcategory",
+                    "search": "Search for subcategory"
+                },
+                "marca": {
+                    "placeholder": "Brand",
+                    "search": "Search for brand"
+                },
+                "canasta": {
+                    "placeholder": "Basket",
+                    "search": "Search for basket"
+                },
+                "tienda": {
+                    "placeholder": "Store",
+                    "search": "Search for store"
+                },
+                "accion": {
+                    "placeholder": "Action",
+                    "search": "Search for action"
+                }
+            }
+        },
+        "labels": {
+            "part-a": "Selected Filters:",
+            "part-b": "Filtered Combinations:",
+            "part-c": "Product Groups:"
+        },
+        "errors": {
+            "no-data": {
+                "part-a": "No results found",
+                "part-b": "You can clear the filters or remove it manually.",
+                "part-c": "last selected filter:"
+            }
+        },
+        "group": {
+            "labels": {
+                "name": "Name",
+                "date": "Validity Date",
+                "total-combinations": "Total Combinations"
+            },
+            "buttons": {
+                "delete": "Delete",
+                "view-detail": "View Detail",
+                "update-date": "Update Date"
+            }
+        },
+        "approve": {
+            "part-a": "There are no pending combinations",
+            "part-b": "Please review your groups before approving."
+        },
+        "tooltip": {
+            "approve": "To be able to Approve you need to have at least one product group.",
+            "delete-filter": "Remove Filter"
+        },
+        "dialog": {
+            "detail": {
+                "title": "Group Detail",
+                "labels": {
+                    "id-scenario": "Scenario ID",
+                    "pending-date": "Pending Date",
+                    "selected-filter": "Selected Filters"
+                }
+            },
+            "delete": {
+                "title": "Delete Group",
+                "message": "Are you sure you want to permanently delete this group?",
+                "buttons": {
+                    "delete": "Yes, delete",
+                    "cancel": "No, cancel"
+                }
+            },
+            "approve": {
+                "title": "Approve Prices",
+                "message": {
+                    "part-a": "Are you sure you want to <strong>approve</strong>?",
+                    "part-b": "After <strong>approving</strong> your prices, you won't be able to <strong>edit</strong> the scenario again."
+                },
+                "buttons": {
+                    "approve": "Yes, approve",
+                    "cancel": "No, cancel"
+                }
+            }
+        },
+        "snack-bar": {
+            "errors": {
+                "get": {
+                    "group": "Error loading groups.",
+                    "filter": "Error loading filters.",
+                    "combination": "Error loading combinations.",
+                    "kpis": "Error loading KPIs."
+                },
+                "post": {
+                    "approve": "Error approving combinations.",
+                    "group": "Error creating group."
+                },
+                "update": {
+                    "group-item": "Error updating group."
+                },
+                "delete": {
+                    "group-item": "Error deleting group."
+                }
+            },
+            "success": {
+                "update": {
+                    "group-item": "Group updated successfully."
+                },
+                "delete": {
+                    "group-item": "Group deleted successfully."
+                },
+                "post": {
+                    "group": "Group created successfully."
+                },
+                "get": {
+                    "kpis": "KPIs loaded successfully."
+                }
+            }
+        }
+    },
+    "maintenance": {
+        "label": {
+            "title": "Maintenance Panel",
+            "margin": "Margin",
+            "exclude": "Exclusion",
+            "scenario": "Scenario",
+            "trigger": "Trigger"
+        },
+        "margin": {
+            "minimum": {
+                "label": {
+                    "title": "Maintenance Minimum Margin"
+                },
+                "table": {
+                    "columns": {
+                        "costo-pmz": "Cost with Tax",
+                        "nivel-1": "Management",
+                        "nivel-2": "Section",
+                        "nivel-3": "Group",
+                        "nivel-4": "Subgroup",
+                        "nivel-5": "Article Group"
+                    }
+                },
+                "filter": {
+                    "search": {
+                        "placeholder": "Search by SKU, Generic code, SKU desc., Brand"
+                    }
+                },
+                "dialog": {
+                    "confirm": {
+                        "title": "Apply Minimum Margin",
+                        "subtitle": "Are you sure you want to apply the minimum margin to all rows?",
+                        "message": "Once applied, you cannot undo this action, you can only update the minimum margin manually.",
+                        "button": {
+                            "apply": "Yes, apply"
+                        }
+                    }
+                }
+            },
+            "generic": {
+                "label": {
+                    "min-margin": "Minimum Margin"
+                },
+                "button": {
+                    "apply": "Apply to all"
+                }
+            },
+            "snackbar": {
+                "success": {
+                    "data": "Data loaded successfully.",
+                    "update-margin": "Margin updated successfully.",
+                    "update-margin-all": "Margins updated successfully."
+                },
+                "error": {
+                    "data": "Error loading data.",
+                    "update-margin": "Error updating margin.",
+                    "update-margin-all": "Error updating margins."
+                }
+            }
+        },
+        "generic": {
+            "label": {
+                "to-back": "Go Back",
+                "show-filter": "Show Filters",
+                "hide-filter": "Hide Filters"
+            }
+        }
+    }
+}
