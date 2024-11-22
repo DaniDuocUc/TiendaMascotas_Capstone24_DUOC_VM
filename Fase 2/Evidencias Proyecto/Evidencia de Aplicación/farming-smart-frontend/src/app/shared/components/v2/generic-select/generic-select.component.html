@@ -1,0 +1,24 @@
+<mat-form-field *ngIf="show" [class]="customClass" [appearance]="appearance">
+    <mat-label *ngIf="config?.label">
+        {{ config?.label }}
+    </mat-label>
+    <mat-select [formControl]="formControl"
+                [multiple]="config?.multiple ?? false"
+                [placeholder]="(hasTransloco) ? (config?.placeholder | transloco) : config?.placeholder"
+    >
+        <mat-option *ngIf="config?.selectAll && valuesFiltered.length >= 2" [value]="config?.all"
+                    (click)="verifyAllSelectedByKey('value', {emitEvent: false})">
+            {{ config?.selectAllLabel }}
+        </mat-option>
+        <ng-container *ngFor="let item of valuesFiltered">
+            <mat-option [value]="item"
+                        (click)="(config?.multiple) ? removeValueByKey('value','all',{emitEvent: false}) : null"
+            >
+                {{
+                    (pipe === 'titlecase') ? (item.label | titlecase) :
+                        item.label
+                }}
+            </mat-option>
+        </ng-container>
+    </mat-select>
+</mat-form-field>
