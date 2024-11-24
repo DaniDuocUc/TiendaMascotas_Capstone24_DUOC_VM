@@ -1,0 +1,17 @@
+# Ignore node_modules
+node_modules
+
+# Ignore environment files
+.env
+example.env
+
+# Ignore logs
+logs/
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/

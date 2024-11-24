@@ -1,9 +1,0 @@
-<button mat-stroked-button class="rounded px-4 min-w-full md:min-w-max"
-        [disabled]="!['manual-list','manual-custom'].includes(homeService.lastUsed) || homeService.getDisabled() || homeService.open === 'realtime' || homeService.open === 'manual' || homeService.disableRefresh"
-        (click)="homeService.open = ''; refresh()"
->
-    <mat-icon class="text-primary dark:text-white">
-        refresh
-    </mat-icon>
-    Refrescar
-</button>

@@ -1,6 +1,0 @@
-.idea
-*.pyc
-__pycache__/
-.venv/
-backend/backend/.env
-.env

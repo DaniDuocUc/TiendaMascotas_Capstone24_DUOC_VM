@@ -1,0 +1,49 @@
+<div style="font-family: 'Roboto', Arial, sans-serif; max-width: 600px; margin: 0 auto; text-align: left">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    @media only screen and (max-width: 600px) {
+      .email-container {
+        width: 100% !important;
+        padding: 10px !important;
+      }
+      .email-container h2,
+      .email-container h3 {
+        font-size: 20px !important;
+      }
+      .email-container p,
+      .email-container td {
+        font-size: 16px !important;
+      }
+    }
+  </style>
+  <div
+    class="email-container"
+    style="max-width: 600px; margin: 0 auto; padding: 20px">
+    <img
+      src="cid:logo"
+      alt="Logo"
+      style="width: 150px; margin-bottom: 20px" />
+
+    <!-- Dynamic content -->
+    {{content}}
+
+    <div style="text-align: center; margin-top: 20px; width: 100%">
+      <a
+        href="{{url}}"
+        style="
+          display: block;
+          background-color: #0078d3;
+          color: white;
+          padding: 12px 0;
+          text-decoration: none;
+          font-size: 18px;
+          border-radius: 4px;
+          width: 100%;
+          text-align: center;
+        ">
+        Ir a Farming Smart >
+      </a>
+    </div>
+  </div>
+</div>

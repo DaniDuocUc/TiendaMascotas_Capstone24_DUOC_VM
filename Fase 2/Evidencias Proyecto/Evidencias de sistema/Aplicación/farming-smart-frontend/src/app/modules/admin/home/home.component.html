@@ -1,0 +1,165 @@
+<layout-v2 class="w-full" [customClass]="'bg-white dark:!bg-gray-800'">
+    <!-- SHOW CONTENT -->
+    <div [hidden]="[''].includes(status())">
+        <div class="px-4 flex flex-col items-start md:justify-between md:items-center mb-4 md:px-0 md:flex-row">
+            <span class="block text-lg md:text-2xl mb-2 font-medium text-primary dark:text-white md:m-0">
+                Mapa Monitoreo IoT
+            </span>
+            <div class="w-full grid grid-cols-1 gap-4 md:w-max md:flex md:gap-x-4">
+                <div
+                    class="shadow rounded p-2 flex justify-between md:justify-center items-center gap-x-2 dark:bg-gray-700">
+                    <span class="dark:text-white">
+                        IoT Normales
+                    </span>
+                    <span class="text-lg font-medium"
+                          [ngClass]="{
+                        'text-green-500': getKpis('green') > 0,
+                        'text-orange-500': getKpis('green') === 0
+                    }"
+                    >
+                        {{
+                            getKpis('green')
+                        }}
+                    </span>
+                </div>
+                <div
+                    class="shadow rounded p-2  flex justify-between md:justify-center items-center gap-x-2 dark:bg-gray-700">
+                    <span class="dark:text-white">
+                        IoT Anormales
+                    </span>
+                    <span class="text-lg font-medium"
+                          [ngClass]="{
+                        'text-yellow-500': getKpis('yellow') > 0,
+
+                    }"
+                    >
+                        {{
+                            getKpis('yellow')
+                        }}
+                    </span>
+                </div>
+                <div
+                    class="shadow rounded p-2  flex justify-between md:justify-center items-center gap-x-2 dark:bg-gray-700">
+                    <span class="dark:text-white">
+                        IoT Críticos
+                    </span>
+                    <span class="text-lg font-medium"
+                          [ngClass]="
+                     {
+                        'text-red-500': getKpis('red') > 0,
+
+                     }
+"
+                    >
+                        {{
+                            getKpis('red')
+                        }}
+                    </span>
+                </div>
+                <div
+                    class="shadow rounded p-2  flex justify-between md:justify-center items-center gap-x-2 dark:bg-gray-700">
+                    <span class="dark:text-white">
+                        Total de Dispositivos
+                    </span>
+                    <span class="text-lg font-medium dark:text-white">
+                        {{ iots?.devices?.length }}
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--
+            Filters
+        -->
+        <div class="px-4 md:px-0">
+             <span class="block my-4 text-lg md:text-xl text-primary font-medium dark:text-white">
+            Filtros
+        </span>
+        </div>
+        <!-- Refresh -->
+        <div class="px-4 md:px-0 grid grid-cols-1 gap-y-4 md:flex md:flex-row gap-x-2">
+            <refresh-time></refresh-time>
+            <manual-time></manual-time>
+            <real-time></real-time>
+        </div>
+        <div class="flex justify-end items-center px-4 mt-4 md:mt-0 md:px-0">
+            <span class="text-sm">
+                Ultima actualización: {{ iots?.request_time }}
+            </span>
+        </div>
+        <mat-divider class="my-4"></mat-divider>
+        <!-- Charts -->
+        <div class="flex flex-col  gap-2 px-4 md:px-0 md:flex-row">
+            <div #chart03 style="height: 400px; width: 100%"></div>
+            <div #chart02 style="height: 400px; width: 100%"></div>
+            <div #chart04 style="height: 400px; width: 100%"></div>
+        </div>
+        <mat-divider class="my-4"></mat-divider>
+        <div class="flex justify-center form-custom px-4 md:px-0">
+            <mat-form-field appearance="outline" class="w-full md:w-1/4">
+                <mat-label>
+                    Visualiza un IoT
+                </mat-label>
+                <mat-select [formControl]="formControl">
+                    <mat-option *ngFor="let location of locations" [value]="location">
+                        IoT N° {{ location.id }}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <!-- Map -->
+        <div class="flex flex-col  gap-2 mt-4 px-4 md:px-0 md:flex-row">
+            <div class="h-[400px] w-full">
+                <div id="map" style="height: 100%; width: 100%" class="z-0"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SHOW SKELETON -->
+    <div [hidden]="['loaded'].includes(status())" class="animate-pulse">
+        <div class="px-4 flex flex-col items-start md:justify-between md:items-center mb-4 md:px-0 md:flex-row">
+            <span
+                class="block w-[200px] h-[39px]  md:w-[240px] md:h-[27px] rounded bg-slate-200 dark:bg-slate-400 mb-2 md:m-0">
+            </span>
+            <div class="w-full grid grid-cols-1 gap-4 md:w-max md:flex md:gap-x-4">
+                <div *ngFor="let item of [1,2,3,4]"
+                     class=" w-full md:w-[180px] h-[40px] rounded bg-slate-200 dark:bg-slate-400 mb-2 md:m-0">
+                </div>
+            </div>
+
+        </div>
+        <!--
+            Filters
+        -->
+        <div class="px-4 md:px-0">
+            <span
+                class="block my-4  w-[100px] h-[39px]  md:w-[90px] md:h-[27px] rounded bg-slate-200 dark:bg-slate-400">
+        </span>
+        </div>
+
+        <div class="px-4 md:px-0 grid grid-cols-1 gap-2 md:flex md:flex-row gap-x-2">
+            <div *ngFor="let item of [1,2,3]"
+                 class="w-full md:w-[140px] h-[40px] rounded bg-slate-200 dark:bg-slate-400">
+            </div>
+        </div>
+        <mat-divider class="my-4"></mat-divider>
+        <!-- Charts -->
+        <div class="flex flex-col  gap-2 g px-4 md:px-0  md:flex-row">
+            <div style="height: 400px; width: 100%" class=" rounded bg-slate-200 dark:bg-slate-400"></div>
+            <div style="height: 400px; width: 100%" class=" rounded bg-slate-200 dark:bg-slate-400"></div>
+            <div style="height: 400px; width: 100%" class=" rounded bg-slate-200 dark:bg-slate-400"></div>
+        </div>
+        <mat-divider class="my-4"></mat-divider>
+        <div class="flex justify-center form-custom px-4 md:px-0">
+            <div class="w-[351px] h-[56px] rounded bg-slate-200 dark:bg-slate-400">
+
+            </div>
+        </div>
+        <!-- Map -->
+        <div class="flex flex-col  gap-2 mt-4 px-4 md:px-0 md:flex-row">
+            <div class="h-[400px] w-full  rounded bg-slate-200 dark:bg-slate-400">
+                <div style="height: 100%; width: 100%"></div>
+            </div>
+        </div>
+    </div>
+
+</layout-v2>
