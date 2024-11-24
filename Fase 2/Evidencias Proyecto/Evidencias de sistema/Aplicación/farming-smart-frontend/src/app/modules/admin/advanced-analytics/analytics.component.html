@@ -1,0 +1,18 @@
+<layout-v2 class="w-full" [customClass]="'bg-white dark:!bg-gray-800'">
+    <div class="px-4 md:px-0">
+        <span class="block font-medium text-xl text-primary dark:text-white">
+        Módulo de Analítica avanzada
+        </span>
+        <span class="block font-medium my-4 text-lg text-primary dark:text-white">
+            Análisis de datos
+        </span>
+        <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+            <mat-tab label="Automático">
+                <automatic-prediction/>
+            </mat-tab>
+            <mat-tab label="Manual">
+                <manual-prediction/>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</layout-v2>

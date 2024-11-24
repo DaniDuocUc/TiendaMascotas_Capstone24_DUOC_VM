@@ -1,0 +1,75 @@
+<table mat-table [dataSource]="dataSource" [classList]="'w-full ' + class" matSort>
+
+    <!-- Items Columns -->
+    <ng-container *ngFor="let item of columns">
+        <!-- Item Sort -->
+        <ng-container *ngIf="hasSort">
+            <!-- String -->
+            <ng-container *ngIf="item.type === 'string'" [matColumnDef]="item.property">
+                <th [class]="item.class" mat-header-cell *matHeaderCellDef mat-sort-header>{{
+                        item.label | transloco
+                    }}
+                </th>
+                <td [class]="item.class" mat-cell *matCellDef="let element"> {{ element[item.property] }}</td>
+            </ng-container>
+            <!-- Custom -->
+            <ng-container *ngIf="item.type === 'custom'" [matColumnDef]="item.property">
+                <th [class]="item.class" mat-header-cell *matHeaderCellDef mat-sort-header>{{
+                        item.label | transloco
+                    }}
+                </th>
+                <td [class]="item.class" mat-cell *matCellDef="let element">
+                    <ng-container
+                        *ngTemplateOutlet="custom; context:{ $implicit: element, column: item.property }"></ng-container>
+                </td>
+            </ng-container>
+        </ng-container>
+        <!-- Item -->
+        <ng-container *ngIf="!hasSort">
+            <!-- String -->
+            <ng-container *ngIf="item.type === 'string'" [matColumnDef]="item.property">
+                <th [class]="item.class" mat-header-cell *matHeaderCellDef>{{
+                        item.label | transloco
+                    }}
+                </th>
+                <td [class]="item.class" mat-cell *matCellDef="let element"> {{ element[item.property] }}</td>
+            </ng-container>
+            <!-- Custom -->
+            <ng-container *ngIf="item.type === 'custom'" [matColumnDef]="item.property">
+                <th [class]="item.class" mat-header-cell *matHeaderCellDef>{{
+                        item.label | transloco
+                    }}
+                </th>
+                <td [class]="item.class" mat-cell *matCellDef="let element">
+                    <ng-container
+                        *ngTemplateOutlet="custom; context:{ $implicit: element, column: item.property }"></ng-container>
+                </td>
+            </ng-container>
+        </ng-container>
+        <!-- Action -->
+        <ng-container *ngIf="item.type === 'action'" [matColumnDef]="item.property">
+            <th [class]="item.class" mat-header-cell *matHeaderCellDef>{{
+                    item.label | transloco
+                }}
+            </th>
+            <td [class]="item.class" mat-cell *matCellDef="let element">
+                <ng-container *ngTemplateOutlet="action; context:{ $implicit: element}"></ng-container>
+            </td>
+        </ng-container>
+
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="selectRow(row)"
+        [ngClass]="(row === selectedRow && hasSelectedRow) ? rowSelectedClass : ''"></tr>
+    <!-- Row shown when there is no matching data. -->
+    <tr class="mat-row" *matNoDataRow>
+        <td class="mat-cell py-6 w-full" colspan="8">{{
+                'generic.table.body.no-data' | transloco
+            }}
+        </td>
+    </tr>
+</table>
+
+
+

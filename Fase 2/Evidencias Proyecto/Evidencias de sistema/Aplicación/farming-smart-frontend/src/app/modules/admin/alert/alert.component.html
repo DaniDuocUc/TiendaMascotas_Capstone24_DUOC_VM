@@ -1,0 +1,96 @@
+<layout-v2 class="w-full" [customClass]="'bg-white dark:!bg-gray-800'">
+    <div class="px-4 md:px-0">
+        <span class="ml-[24px] font-medium text-primary text-xl dark:text-white my-4 block">
+            Administración de Alertas
+        </span>
+        <div class="flex my-2 ml-[24px]">
+            <button mat-stroked-button color="primary" class="px-4 rounded dark:text-white" (click)="refresh()">
+                <mat-icon class="text-primary dark:text-white">
+                    refresh
+                </mat-icon>
+                Refrescar
+            </button>
+        </div>
+        <mat-tab-group #tabGroup mat-stretch-tabs="false" mat-align-tabs="start">
+            <mat-tab label="Creadas">
+                <manage-alert [columns]="columns" path="/alerts" [create]="true" [itemsFilter]="[{
+            name: 'search',
+            type: 'input',
+            columns: [],
+            placeholder: 'Buscar por cualquier campo',
+            appearance: 'outline',
+            class: 'w-full form-border-none form-shadow-none',
+        },
+        {
+            name: 'operator',
+            type: 'select',
+            columns: ['operator'],
+            multiple: true,
+            placeholder: 'Operador',
+            appearance: 'outline',
+            class: ' w-full md:w-1/2 form-border-none form-shadow-none',
+        },
+        {
+            name: 'status',
+            type: 'select',
+            columns: ['status'],
+            multiple: true,
+            placeholder: 'Estado',
+            appearance: 'outline',
+            class: 'w-full md:w-1/2 form-border-none form-shadow-none',
+        },
+        {
+            name: 'time_window',
+            type: 'select',
+            multiple: true,
+            columns: ['time_window'],
+            placeholder: 'Ventana de tiempo',
+            appearance: 'outline',
+            class: ' w-full md:w-1/2 form-border-none form-shadow-none',
+        }
+        ]"/>
+            </mat-tab>
+            <mat-tab label="Ejecutadas">
+                <manage-alert [columns]="columnsForExecuted" path="/alerts/triggered" [itemsFilter]="[
+                {
+            name: 'search',
+            type: 'input',
+            columns: [],
+            placeholder: 'Buscar por cualquier campo',
+            appearance: 'outline',
+            class: 'w-full form-border-none form-shadow-none',
+        },
+        {
+            name: 'operator',
+            type: 'select',
+            multiple: true,
+            columns: ['operator'],
+            placeholder: 'Operador',
+            appearance: 'outline',
+            class: ' w-full md:w-1/2 form-border-none form-shadow-none',
+        },
+        {
+            name: 'device_id',
+            type: 'select',
+            multiple: true,
+            columns: ['device_id'],
+            placeholder: 'Dispositivo',
+            appearance: 'outline',
+            class: ' w-full md:w-1/2 form-border-none form-shadow-none',
+        },
+        {
+            name: 'time_window',
+            type: 'select',
+            multiple: true,
+            columns: ['time_window'],
+            placeholder: 'Ventana de tiempo',
+            appearance: 'outline',
+            class: ' w-full md:w-1/2 form-border-none form-shadow-none',
+        }
+                ]"/>
+            </mat-tab>
+        </mat-tab-group>
+    </div>
+</layout-v2>
+
+
