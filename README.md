@@ -1,4 +1,4 @@
-# Smart Farming - Sistema de Monitoreo de Riego
+# Farming Smart - Sistema de Monitoreo de Riego
 
 ## 📝 Descripción del Proyecto
 
